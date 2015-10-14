@@ -48,12 +48,13 @@ public class MainActivity extends AppCompatActivity {
         if (cursor != null) {
             cursor.moveToFirst();
             while (!cursor.isAfterLast()) {
-                Log.i("Datos", cursor.getString(cursor.getColumnIndex("display_name")));
+                Log.i("Contacto", cursor.getString(cursor.getColumnIndex("display_name")));
                 datos.add(cursor.getString(cursor.getColumnIndex("display_name")));
                 cursor.moveToNext();
             }
             cursor.close();  // liberar recursos al terminar
         }
+
         return datos;
     }
 }
