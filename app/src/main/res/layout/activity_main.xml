@@ -15,8 +15,9 @@
         android:layout_height="wrap_content"
         android:text="@string/titulo"
         android:textStyle="bold"
-        android:textSize="@dimen/abc_text_size_headline_material"
-        android:textColor="@color/colorPrimaryDark" />
+        android:textSize="@dimen/abc_text_size_title_material"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAlignment="center" />
 
     <ListView
         android:id="@+id/listadoContactos"
